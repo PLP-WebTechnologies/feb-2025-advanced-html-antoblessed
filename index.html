@@ -1,0 +1,83 @@
+css
+
+multimedia-webpage/
+├── index.html
+├── media/
+│   ├── sample-audio.mp3
+│   └── sample-video.mp4
+├── images/
+│   └── sample-image.jpg
+├── README.md
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Webpage</title>
+</head>
+<body>
+
+    <h1>Welcome to Our Multimedia Webpage</h1>
+
+    <!-- Embedded Image -->
+    <h2>Our Featured Image</h2>
+    <img src="images/sample-image.jpg" alt="Sample" width="400">
+
+    <!-- Audio Player -->
+    <h2>Listen to Our Intro</h2>
+    <audio controls>
+        <source src="media/sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video Player -->
+    <h2>Watch Our Video</h2>
+    <video width="480" controls>
+        <source src="media/sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Registration Form with Validation -->
+    <h2>Register Below</h2>
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <!-- Table -->
+    <h2>Event Schedule</h2>
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>Event</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Workshop</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Webinar</td>
+        </tr>
+    </table>
+
+    <!-- List -->
+    <h2>Topics Covered</h2>
+    <ul>
+        <li>HTML Basics</li>
+        <li>Forms & Validation</li>
+        <li>Multimedia Elements</li>
+        <li>Tables and Lists</li>
+    </ul>
+
+</body>
+</html>
