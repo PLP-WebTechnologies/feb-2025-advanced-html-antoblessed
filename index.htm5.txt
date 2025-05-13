@@ -1,0 +1,142 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Page</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Assignment Page</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>My Roman Numeral List</h2>
+        <ol type="I">
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+            <li>Fourth Item</li>
+            <li>Fifth Item</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Beautiful Nature Image</h2>
+        <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" 
+             alt="Nature Scene from Pexels" 
+             width="600">
+    </section>
+
+    <!-- Contact Table -->
+    <section>
+        <h2>Contact List</h2>
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice Johnson</td>
+                    <td>123 Elm Street</td>
+                    <td>+1234567890</td>
+                    <td>alice@example.com</td>
+                </tr>
+                <tr>
+                    <td>Bob Smith</td>
+                    <td>456 Oak Avenue</td>
+                    <td>+0987654321</td>
+                    <td>bob@example.com</td>
+                </tr>
+                <tr>
+                    <td>Charlie Brown</td>
+                    <td>789 Maple Road</td>
+                    <td>+1122334455</td>
+                    <td>charlie@example.com</td>
+                </tr>
+                <tr>
+                    <td>Diana Prince</td>
+                    <td>321 Pine Street</td>
+                    <td>+6677889900</td>
+                    <td>diana@example.com</td>
+                </tr>
+                <tr>
+                    <td>Edward Kenway</td>
+                    <td>654 Birch Lane</td>
+                    <td>+4455667788</td>
+                    <td>edward@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="POST">
+            <!-- Name Field -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6"><br><br>
+
+            <!-- Date Field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <!-- Dropdown Menu -->
+            <label for="country">Select Country:</label>
+            <select id="country" name="country" required>
+                <option value="">--Choose--</option>
+                <option value="Kenya">Kenya</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="India">India</option>
+            </select><br><br>
+
+            <!-- Radio Buttons -->
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br><br>
+
+            <!-- Checkboxes -->
+            <p>Interests:</p>
+            <input type="checkbox" id="coding" name="interests" value="Coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="music" name="interests" value="Music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="travel" name="interests" value="Travel">
+            <label for="travel">Travel</label><br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 My Assignment Page</p>
+    </footer>
+
+</body>
+</html>
